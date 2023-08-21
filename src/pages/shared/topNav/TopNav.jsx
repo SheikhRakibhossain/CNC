@@ -1,10 +1,12 @@
 import React from 'react';
+import { Image } from 'react-bootstrap';
 
 const TopNav = () => {
     return (
-        <div>
-            <h2>Top navbar</h2>
-        </div>
+        <>
+        <Image src="/src/assets/top heading.png" fluid />
+        
+        </>
     );
 };
 
