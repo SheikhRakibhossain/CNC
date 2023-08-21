@@ -1,12 +1,18 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import Header from '../pages/shared/header/Header';
+import Footer from '../pages/shared/footer/Footer';
+import { Outlet } from 'react-router-dom';
 
 const Main = () => {
     return (
-        <div>
-            <h3>This is the Main layout.</h3>
-            <Button variant="warning">Warning</Button>
-        </div>
+        <>
+            <Header />
+
+            <Outlet />
+
+            <Footer />
+
+        </>
     );
 };
 
