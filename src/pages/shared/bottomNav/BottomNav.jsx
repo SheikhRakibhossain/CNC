@@ -6,7 +6,7 @@ import { FaSearch, FaUser } from 'react-icons/fa';
 
 const BottomNav = () => {
     return (
-        <nav className="navbar navbar-expand-lg bg-black">
+        <nav className="navbar navbar-expand-lg bg-black sticky-top">
             <div className="container-fluid">
                 {/* logo left side */}
                 <Link className="navbar-brand" href="#"><img src={logo} alt="logo" className='logo' /></Link>
