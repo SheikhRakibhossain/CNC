@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css'
+import { FaClock, FaFacebook, FaInstagram, FaLinkedin, FaLocationArrow, FaMap, FaPhone, FaTwitter, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -8,20 +9,20 @@ const Footer = () => {
                 <div className="footer-top">
                     <div className="row">
                         <div className="col-md-6 col-lg-3 about-footer">
-                            <h3>Lorem Ipsum dummy text </h3>
+                            <h3> Find On Us  </h3>
                             <ul>
-                                <li><a href="tel:(010) 1234 4321"><i className="fas fa-phone fa-flip-horizontal"></i>(010) 1234 4321</a></li>
-                                <li><i className="fas fa-map-marker-alt"></i>
-                                    1 / 105 Bay Lights,
-                                    <br />Lorem Ipsum,
-                                    <br />LIC 3201
+                                <li><a href="tel:(+88)01637503636" ><FaPhone/><span className='ps-2'>(+88) 01637503636</span></a></li>
+                                <li>
+                                    <span className='pe-2'><FaMap/></span> 1 / 105 Bay Lights,
+                                    <br />Manikganj,Dhaka
+                                    <br />Uttara, 1201/c-Block
                                 </li>
                             </ul>
-                            <a href="" className="btn red-btn">Book Now</a>
+                            <a href="" className="btn red-btn">Contact Now</a>
                         </div>
                         <div className="col-md-6 col-lg-2 page-more-info">
                             <div className="footer-title">
-                                <h4>Page links</h4>
+                                <h4>Main Page links</h4>
                             </div>
                             <ul>
                                 <li><a href="#">Home</a></li>
@@ -37,38 +38,39 @@ const Footer = () => {
                                 <h4>More Info</h4>
                             </div>
                             <ul>
-                                <li><a href="#">Lorem ipsum</a></li>
-                                <li><a href="#">Dolor sit amet</a></li>
-                                <li><a href="#">Consectetur Adipisicing </a></li>
-                                <li><a href="#">Ed do eiusmod tempor incididunt</a></li>
+                                <li><a href="#">Terms and Condition</a></li>
+                                <li><a href="#">Membership Policy</a></li>
+                                <li><a href="#">My Dashboard </a></li>
+                                <li><a href="#">Our News Forum</a></li>
+                                <li><a href="#">Our Team Members</a></li>
                             </ul>
                         </div>
                         <div className="col-md-6 col-lg-4 open-hours">
                             <div className="footer-title">
                                 <h4>Open hours</h4>
-                                <ul className="footer-social">
+                                {/* <ul className="footer-social">
                                     <li><a href="" target="_blank"><i className="fab fa-facebook-f"></i></a></li>
                                     <li><a href="" target="_blank"><i className="fab fa-instagram"></i></a></li>
                                     <li><a href="" target="_blank"><i className="fab fa-linkedin-in"></i></a></li>
 
-                                </ul>
+                                </ul> */}
                             </div>
                             <table className="table">
                                 <tbody>
-                                    <tr>
-                                        <td><i className="far fa-clock"></i>Monday Thursday</td>
+                                    <tr scope="row">
+                                        <td>Monday Thursday</td>
                                         <td>9:00am - 5:00pm</td>
                                     </tr>
-                                    <tr>
-                                        <td><i className="far fa-clock"></i>Friday</td>
+                                    <tr scope="row">
+                                        <td>Friday</td>
                                         <td>9:00am - 4:00pm</td>
                                     </tr>
-                                    <tr>
-                                        <td><i className="far fa-clock"></i>Sturday</td>
+                                    <tr scope="row">
+                                        <td>Saturday</td>
                                         <td>9:00am - 1:30pm</td>
                                     </tr>
-                                    <tr>
-                                        <td><i className="far fa-clock"></i>Sunday</td>
+                                    <tr scope="row">
+                                        <td>Sunday</td>
                                         <td>9:30am - 12:00pm</td>
                                     </tr>
                                 </tbody>
@@ -79,11 +81,11 @@ const Footer = () => {
                                     <table>
                                         <tbody>
                                             <tr>
-                                                <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"/></td>
-                                                <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"/></td>
-                                                <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"/></td>
-                                                <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"/></td>
-                                                <td><img src="https://i.ibb.co/vxc577d/dummy-logo3.jpg"/></td>
+                                                <td className='fs-1 ml-2'><FaFacebook/></td>
+                                                <td className='fs-1 ms-4'><FaTwitter/></td>
+                                                <td className='fs-1'><FaLinkedin/></td>
+                                                <td className='fs-1'><FaYoutube/></td>
+                                                <td className='fs-1'><FaInstagram/></td>
                                                 </tr>
                                         </tbody>
                                     </table>
@@ -95,10 +97,10 @@ const Footer = () => {
                     <div className="footer-bottom">
                         <div className="row">
                             <div className="col-sm-4">
-                                <a href="">Privacy policy</a>
+                                <a href="https://www.upwork.com/freelancers/mdrakibh10">Developed By <strong className='text-warning fst-italic text-decoration-underline'>Rakib.io</strong></a>
                             </div>
                             <div className="col-sm-8">
-                                <p>Lorem ipsum dolor sit amet @ 2019 All rights reserved</p>
+                                <p>React.Js & Next.js Developer &copy; 2018-2024 All rights reserved</p>
                             </div>
                         </div>
                     </div>
