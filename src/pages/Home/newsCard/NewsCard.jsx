@@ -3,11 +3,13 @@ import { Image } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
-import { FaBookmark, FaEye, FaShareAlt } from 'react-icons/fa';
+import { FaBookmark, FaEye, FaRegStar, FaShareAlt, FaStar, FaStarHalf } from 'react-icons/fa';
+import Rating from 'react-rating'
 
 
 const NewsCard = ({ news }) => {
 
+    // var Rating = require('react-rating');
     const { _id, title, image_url, details, author, total_view, rating } = news;
 
     return (
@@ -35,9 +37,15 @@ const NewsCard = ({ news }) => {
                         {details.length < 250 ? <>{details}</> : <>{details.slice(0, 250)} ... <Link to={`/category/${_id}`} className='link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'>read more</Link></>}
                     </Card.Text>
                 </Card.Body>
-                <Card.Footer className="text-muted fs-5">
-                    <div> </div>
-                    <div><p className='fz-6 fw-normal'><span> <FaEye /> </span> {total_view} Views</p></div>
+                <Card.Footer className="text-muted fs-5 d-flex align-items-center">
+                    <div className='flex-grow-1'> <Rating
+                        placeholderRating={rating?.number}
+                        readonly
+                        emptySymbol={<FaRegStar/>}
+                        placeholderSymbol={<FaStar className='text-warning'/>}
+                        fullSymbol={<FaStar/>}
+                    /> <span className='fs-6 fw-normal'>{rating?.number}</span> </div>
+                    <div ><span className='fs-6 fw-normal'><span> <FaEye /> </span> {total_view} Views</span></div>
                 </Card.Footer>
             </Card>
         </>
