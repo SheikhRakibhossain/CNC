@@ -3,12 +3,12 @@ import { Image } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
-import { FaBookmark, FaShare, FaShareAlt } from 'react-icons/fa';
+import { FaBookmark, FaEye, FaShareAlt } from 'react-icons/fa';
 
 
 const NewsCard = ({ news }) => {
 
-    const { _id, title, image_url, details, author } = news;
+    const { _id, title, image_url, details, author, total_view, rating } = news;
 
     return (
         <>
@@ -23,12 +23,10 @@ const NewsCard = ({ news }) => {
                             </div>
                         </div>
                         <div className='d-flex gap-3'>
-                            <Link to={'/news'} className='fs-4'><FaShareAlt/></Link>
-                            <Link to={'/category'} className='fs-4'><FaBookmark/></Link>
+                            <Link to={'/news'} className='fs-4'><FaShareAlt /></Link>
+                            <Link to={'/category'} className='fs-4'><FaBookmark /></Link>
                         </div>
                     </div>
-
-
                 </Card.Header>
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
@@ -37,7 +35,10 @@ const NewsCard = ({ news }) => {
                         {details.length < 250 ? <>{details}</> : <>{details.slice(0, 250)} ... <Link to={`/category/${_id}`} className='link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'>read more</Link></>}
                     </Card.Text>
                 </Card.Body>
-                <Card.Footer className="text-muted fs-5">2 days ago</Card.Footer>
+                <Card.Footer className="text-muted fs-5">
+                    <div> </div>
+                    <div><p className='fz-6 fw-normal'><span> <FaEye /> </span> {total_view} Views</p></div>
+                </Card.Footer>
             </Card>
         </>
     );
