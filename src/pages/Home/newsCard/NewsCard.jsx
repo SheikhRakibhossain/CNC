@@ -3,6 +3,7 @@ import { Image } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import moment from 'moment';
+import { FaBookmark, FaShare, FaShareAlt } from 'react-icons/fa';
 
 
 const NewsCard = ({ news }) => {
@@ -12,16 +13,18 @@ const NewsCard = ({ news }) => {
     return (
         <>
             <Card className='my-4 pe-auto'>
-                <Card.Header className='d-flex'>
-                    <div className='d-flex justify-content-center'>
-                        <Image src={author?.img} roundedCircle style={{ height: '40px' }} />
-                        <div className='ms-2'>
-                            <p className='fs-6 fw-normal mb-0'>{author?.name}</p>
-                            <p className='fs-6 fw-normal'>{moment(author?.published_date).format('MMM, Do YYYY, h:mm:ss a')}</p>
+                <Card.Header>
+                    <div className='d-flex justify-content-between align-items-center' style={{ border: '1px' }}>
+                        <div className='d-flex justify-content-center mt-2'>
+                            <Image src={author?.img} roundedCircle style={{ height: '40px' }} />
+                            <div className='ms-4'>
+                                <p className='fs-6 fw-normal mb-2'>{author?.name}</p>
+                                <p className='fs-6 fw-normal '>{moment(author?.published_date).format('MMM, Do YYYY, h:mm:ss a')}</p>
+                            </div>
                         </div>
-                        <div>
-                            <h3>her</h3>
-                            <p>he</p>
+                        <div className='d-flex gap-3'>
+                            <Link to={'/news'} className='fs-4'><FaShareAlt/></Link>
+                            <Link to={'/category'} className='fs-4'><FaBookmark/></Link>
                         </div>
                     </div>
 
