@@ -34,7 +34,7 @@ const NewsCard = ({ news }) => {
                     <Card.Title>{title}</Card.Title>
                     <Card.Img src={image_url} alt='post_image' className='py-2' />
                     <Card.Text className='fs-6 fw-normal py-2'>
-                        {details.length < 250 ? <>{details}</> : <>{details.slice(0, 250)} ... <Link to={`/category/${_id}`} className='link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'>read more</Link></>}
+                        {details.length < 250 ? <>{details}</> : <>{details.slice(0, 250)} ... <Link to={`/news/${_id}`} className='link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover'>read more</Link></>}
                     </Card.Text>
                 </Card.Body>
                 <Card.Footer className="text-muted fs-5 d-flex align-items-center">
