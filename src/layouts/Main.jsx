@@ -10,7 +10,7 @@ const Main = () => {
     return (
         <>
             <Header />
-            <Container>
+            <Container className='py-4'>
                 <Row>
                     <Col lg={3}><LeftNav/></Col>
                     <Col lg={6}><h3><Outlet /> </h3></Col>
