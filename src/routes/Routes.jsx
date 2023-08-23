@@ -6,6 +6,8 @@ import Category from '../pages/Home/category/Category';
 import NewsLayout from '../layouts/NewsLayout';
 import News from '../pages/news/News';
 import Editors from '../components/editor/editors';
+import Login from '../pages/Login/Login';
+import Register from '../pages/Register/Register';
 
 const router = createBrowserRouter([
     {
@@ -19,20 +21,21 @@ const router = createBrowserRouter([
             loader:({params})=>fetch('http://localhost:5000/news')
         },
         {
+          path:'/category/:id',
+          element:<Category/>,
+          loader:({params})=>fetch(`http://localhost:5000/categories/${params.id}`)
+        },
+        {
             path:'/home',
             element:<Home/>,
         },
         {
             path:'/editors',
             element:<Editors/>
-        },
-        {
-          path:'/category/:id',
-          element:<Category/>,
-          loader:({params})=>fetch(`http://localhost:5000/categories/${params.id}`)
         }
       ]
     },
+   
     {
       path:'news',
       element:<NewsLayout/>,
@@ -46,6 +49,14 @@ const router = createBrowserRouter([
 
       ]
 
+    },
+    {
+      path:'login',
+      element:<Login/>
+    },
+    {
+      path:'register',
+      element:<Register/>
     }
   ]);
 
