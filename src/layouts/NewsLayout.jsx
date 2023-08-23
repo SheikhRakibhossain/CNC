@@ -4,6 +4,7 @@ import Footer from '../pages/shared/footer/Footer';
 import { Outlet } from 'react-router-dom';
 import { Col, Container, Row } from 'react-bootstrap';
 import RightNav from '../components/rightNav/RightNav';
+import Insights from '../components/insights/Insights';
 
 const NewsLayout = () => {
     return (
@@ -15,6 +16,7 @@ const NewsLayout = () => {
                 <Col lg={3}><RightNav/></Col>
             </Row>
         </Container>
+        <Insights/>
         <Footer />
 
     </>
