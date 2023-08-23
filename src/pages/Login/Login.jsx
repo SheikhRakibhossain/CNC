@@ -1,12 +1,31 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
+import { AuthContext } from '../../provider/AuthProvider';
 
 const Login = () => {
+    const {logIn} = useContext(AuthContext);
+    const handleLogin = event =>{
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(email, password);
+        logIn(email, password)
+        .then(res =>{
+            const loggedUser = res.user;
+            console.log(loggedUser);
+        })
+        .catch(error =>{
+            console.log(error)
+        })
+
+
+    }
     return (
       <>
        <Container className='w-50 mx-auto '>
         <h2>Login Please !</h2>
-                <Form>
+                <Form onSubmit={handleLogin}>
                     <Row className="mb-3">
                         <Form.Group as={Col} md="12" >
                             <Form.Label>Email</Form.Label>
