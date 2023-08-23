@@ -1,5 +1,8 @@
 import React from 'react';
 import { Button, Card, Col, Row } from 'react-bootstrap';
+import { FaCalendar } from 'react-icons/fa';
+import moment from 'moment';
+
 
 const Insight = ({insight}) => {
     return (
@@ -12,6 +15,7 @@ const Insight = ({insight}) => {
                   {insight.detail}
                 </Card.Text>
               </Card.Body>
+              <Card.Footer className="text-muted"><span className='text-dark'><FaCalendar/>  {moment(insight?.date).format('MMM, Do YYYY')}</span> </Card.Footer>
             </Card>
           </Col>
       
