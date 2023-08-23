@@ -15,7 +15,8 @@ const router = createBrowserRouter([
 
         {
             path:'/',
-            element:<Home/>
+            element:<Category/>,
+            loader:({params})=>fetch('http://localhost:5000/news')
         },
         {
             path:'/editors',
