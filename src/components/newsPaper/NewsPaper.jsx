@@ -1,7 +1,6 @@
 import React from 'react';
 import newsPaperImage from '../../assets/bg1.png'
-import { FaArrowRight } from 'react-icons/fa';
-import { Button, Card, Col } from 'react-bootstrap';
+import { Button, Card} from 'react-bootstrap';
 
 
 

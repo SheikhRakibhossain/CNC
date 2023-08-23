@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from '../../../assets/logo.png'
 import { Link } from 'react-router-dom';
 import './BottomNav.css';
 import { FaSearch, FaUser } from 'react-icons/fa';
+import { AuthContext } from '../../../provider/AuthProvider';
 
 const BottomNav = () => {
+    const {user} = useContext(AuthContext)
     return (
         <nav className="navbar navbar-expand-lg bg-black sticky-top">
             <div className="container-fluid">
@@ -16,6 +18,9 @@ const BottomNav = () => {
                 <div className="collapse navbar-collapse " id="navbarTogglerDemo02">
                     {/* Left side menu items */}
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold text-white">
+                        <li className="nav-item">
+                            <a className="nav-link text-white active" aria-current="page" href="#"><Link to='/home'>Home</Link></a>
+                        </li>
                         <li className="nav-item">
                             <a className="nav-link text-white active" aria-current="page" href="#">US</a>
                         </li>
@@ -72,7 +77,7 @@ const BottomNav = () => {
                             <a className="nav-link active text-white" aria-current="page" href="#"><FaSearch/></a> 
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link active text-white" aria-current="page" href="#"><FaUser/></a> 
+                            <a className="nav-link active text-white" aria-current="page" href="#">{user ? <Link to='' className='text-white'>Logout</Link>:<FaUser/>}</a> 
                             </li>
                         </ul>
                     </div>
