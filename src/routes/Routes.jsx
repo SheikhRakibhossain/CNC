@@ -5,6 +5,7 @@ import Home from '../pages/Home/Home/Home';
 import Category from '../pages/Home/category/Category';
 import NewsLayout from '../layouts/NewsLayout';
 import News from '../pages/news/News';
+import Editors from '../components/editor/editors';
 
 const router = createBrowserRouter([
     {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
         {
             path:'/',
             element:<Home/>
+        },
+        {
+            path:'/editors',
+            element:<Editors/>
         },
         {
           path:'/category/:id',

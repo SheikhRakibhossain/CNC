@@ -7,7 +7,7 @@ import moment from 'moment';
 const Insight = ({insight}) => {
     return (
           <Col >
-            <Card style={{ height: '450px' }}>
+            <Card style={{ height: '470px' }}>
               <Card.Img variant="top" src={insight.image} />
               <Card.Body>
                 <Card.Title>{insight.title}</Card.Title>

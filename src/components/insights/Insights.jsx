@@ -15,7 +15,7 @@ const Insights = () => {
 
     return (
         <>
-        <h3>Editor Publication</h3>
+        <h3 className='py-4'> <span className='border-bottom border-2 border-dark py-2'>Editor Publication's Choice</span></h3>
         <Row  xs={1} md={2} lg={4} className="g-5">
 
             {

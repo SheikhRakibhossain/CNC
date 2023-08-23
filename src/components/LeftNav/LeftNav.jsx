@@ -13,7 +13,7 @@ const LeftNav = () => {
 
     }, [])
     return (
-        <div>
+        <>
             <h3>All Category</h3>
             {
                 categories.map(category => <div
@@ -21,7 +21,8 @@ const LeftNav = () => {
                 <Link to={`/category/${category.id}`} className='fw-semibold link-dark link-offset-2 link-opacity-75-hover d-block py-3 px-1' >{category.name}</Link>
                 </div>)
             }
-        </div>
+            
+        </>
     );
 };
 
