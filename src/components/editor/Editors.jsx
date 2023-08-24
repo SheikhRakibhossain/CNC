@@ -6,7 +6,7 @@ const Editors = () => {
     const [editors, setEditors] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/editor')
+        fetch('https://cnc-server.vercel.app/editor')
         .then(res => res.json())
         .then(data =>setEditors(data))
         .catch(error => console.log(error))

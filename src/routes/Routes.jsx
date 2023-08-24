@@ -23,12 +23,12 @@ const router = createBrowserRouter([
         {
             path:'/',
             element:<Category/>,
-            loader:({params})=>fetch('http://localhost:5000/news')
+            loader:({params})=>fetch('https://cnc-server.vercel.app/news')
         },
         {
           path:'/category/:id',
           element:<Category/>,
-          loader:({params})=>fetch(`http://localhost:5000/categories/${params.id}`)
+          loader:({params})=>fetch(`https://cnc-server.vercel.app/categories/${params.id}`)
         },
         {
             path:'/home',
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
         {
           path:':id',
           element:<News/>,
-          loader: ({params})=>fetch(`http://localhost:5000/news/${params.id}`)
+          loader: ({params})=>fetch(`https://cnc-server.vercel.app/news/${params.id}`)
         }
 
       ]

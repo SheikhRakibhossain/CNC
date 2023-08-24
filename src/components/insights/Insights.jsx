@@ -7,7 +7,7 @@ const Insights = () => {
     const [insights, setInsights] = useState([]);
     useEffect(() => {
 
-        fetch('http://localhost:5000/insights')
+        fetch('https://cnc-server.vercel.app/insights')
             .then(res => res.json())
             .then(data => setInsights(data))
             .catch(error => console.log(error))
