@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { createContext } from 'react';
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import app from '../firebase.config';
 
 export const AuthContext = createContext(null);
@@ -20,7 +20,7 @@ const AuthProvider = ({children}) => {
         setLoading(false)
     }
 
-    const signOut =()=>{
+    const logOut =()=>{
         return signOut(auth);
     }
     // user observer created
@@ -29,7 +29,7 @@ const AuthProvider = ({children}) => {
             console.log('Logged user staying on state observer', loggedUser);
             setUser(loggedUser)
         })
-        return ()=>{
+        return () => {
             return unsubscribe()
         }
 
@@ -41,7 +41,7 @@ const AuthProvider = ({children}) => {
         loading,
         createUser,
         logIn,
-        signOut,
+        logOut,
     };
     return (
         <AuthContext.Provider value={authInfo}>

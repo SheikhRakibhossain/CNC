@@ -4,9 +4,17 @@ import { Link } from 'react-router-dom';
 import './BottomNav.css';
 import { FaSearch, FaUser } from 'react-icons/fa';
 import { AuthContext } from '../../../provider/AuthProvider';
+import { Button } from 'react-bootstrap';
 
 const BottomNav = () => {
-    const {user} = useContext(AuthContext)
+    const {user, logOut} = useContext(AuthContext)
+    
+    const handleLogOut = () =>{
+        logOut()
+        .then()
+        .catch(error=>console.log(error))
+    }
+    
     return (
         <nav className="navbar navbar-expand-lg bg-black sticky-top">
             <div className="container-fluid">
@@ -77,7 +85,7 @@ const BottomNav = () => {
                             <a className="nav-link active text-white" aria-current="page" href="#"><FaSearch/></a> 
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link active text-white" aria-current="page" href="#">{user ? <Link to='' className='text-white'>Logout</Link>:<FaUser/>}</a> 
+                            <a className="nav-link active text-white" aria-current="page" href="#">{user ? <Button onClick={handleLogOut} className='text-white'>Logout</Button>:<FaUser/>}</a> 
                             </li>
                         </ul>
                     </div>
