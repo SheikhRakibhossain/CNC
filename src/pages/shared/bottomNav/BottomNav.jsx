@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import logo from '../../../assets/logo.png'
 import { Link, useNavigate } from 'react-router-dom';
 import './BottomNav.css';
-import { FaSearch, FaUser } from 'react-icons/fa';
+import { FaSearch, FaUserCircle } from 'react-icons/fa';
 import { AuthContext } from '../../../provider/AuthProvider';
 import { Button } from 'react-bootstrap';
 
@@ -28,7 +28,7 @@ const BottomNav = () => {
                     {/* Left side menu items */}
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold text-white">
                         <li className="nav-item">
-                            <a className="nav-link text-white active" aria-current="page" href="#"><Link to='/home'>Home</Link></a>
+                            <a className="nav-link text-white active" aria-current="page" href="#"><Link to='/home' className='text-white'>Home</Link></a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link text-white active" aria-current="page" href="#">US</a>
@@ -55,13 +55,13 @@ const BottomNav = () => {
                             <a className="nav-link text-white" aria-disabled="true">Style</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" aria-disabled="true">Travel</a>
+                            <a className="nav-link text-white" aria-disabled="true"><Link to='/travel' className='text-white'>Travel</Link></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" aria-disabled="true">Sports</a>
+                            <a className="nav-link text-white" aria-disabled="true"><Link to='/sports' className='text-white'>Sports</Link></a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" aria-disabled="true">Video</a>
+                            <a className="nav-link text-white" aria-disabled="true"><Link to='/video' className='text-white'>Video</Link></a>
                         </li>
                         <li className="nav-item">
                             <a className="nav-link text-white" aria-disabled="true">Research</a>
@@ -86,7 +86,7 @@ const BottomNav = () => {
                             <a className="nav-link active text-white" aria-current="page" href="#"><FaSearch/></a> 
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link active text-white" aria-current="page" href="#">{user ? <Button onClick={handleLogOut} variant="warning" size="sm">Logout</Button>:<Link to='/login' className='text-white'><FaUser/></Link>}</a> 
+                            <a className="nav-link active text-white" aria-current="page" href="#">{user ? <Button onClick={handleLogOut} variant="warning" size="sm" style={{padding:'5px 10px'}}>Logout</Button>:<Link to='/login' className='text-white'><FaUserCircle/></Link>}</a> 
                             </li>
                         </ul>
                     </div>

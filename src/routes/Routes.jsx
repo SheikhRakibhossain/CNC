@@ -11,6 +11,7 @@ import Register from '../pages/Register/Register';
 import Video from '../pages/Video/Video';
 import Travel from '../pages/travel/Travel';
 import Sports from '../pages/sports/Sports';
+import PrivateRoute from './PrivateRoute';
 
 const router = createBrowserRouter([
     {
@@ -63,15 +64,15 @@ const router = createBrowserRouter([
     },
     {
       path:'video',
-      element:<Video/>
+      element:<PrivateRoute><Video/></PrivateRoute>
     },
     {
       path:'travel',
-      element:<Travel/>
+      element:<PrivateRoute><Travel/></PrivateRoute>
     },
     {
       path:'sports',
-      element:<Sports/>
+      element:<PrivateRoute><Sports/></PrivateRoute>
     }
   ]);
 
