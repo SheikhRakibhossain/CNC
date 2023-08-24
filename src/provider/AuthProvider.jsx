@@ -11,23 +11,25 @@ const AuthProvider = ({children}) => {
     const [loading, setLoading] = useState(true);
 
     const createUser = (email, password) =>{
-        return createUserWithEmailAndPassword(auth, email, password)
-        setLoading(false)
+        setLoading(true);
+        return createUserWithEmailAndPassword(auth, email, password);
     }
 
     const logIn = (email, password) =>{
-        return signInWithEmailAndPassword(auth, email, password)
-        setLoading(false)
+        setLoading(true);
+        return signInWithEmailAndPassword(auth, email, password);
     }
 
     const logOut =()=>{
+        setLoading(true);
         return signOut(auth);
     }
     // user observer created
     useEffect(()=>{
         const unsubscribe = onAuthStateChanged(auth, loggedUser =>{
             console.log('Logged user staying on state observer', loggedUser);
-            setUser(loggedUser)
+            setUser(loggedUser);
+            setLoading(false)
         })
         return () => {
             return unsubscribe()
