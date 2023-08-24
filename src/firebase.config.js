@@ -7,13 +7,13 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDwZo7Icmm351b8UD4yLz4RV3r5OMM5rJI",
-  authDomain: "cnc-news-4ec31.firebaseapp.com",
-  projectId: "cnc-news-4ec31",
-  storageBucket: "cnc-news-4ec31.appspot.com",
-  messagingSenderId: "734522688130",
-  appId: "1:734522688130:web:d322071bc1a326e4c4aa9b",
-  measurementId: "G-HT0L3NDLD0",
+  apiKey: import.meta.env.VITE_APIKEY,
+  authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_PROJECTID,
+  storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
+  appId: import.meta.env.VITE_APPID,
+  measurementId: import.meta.env.VITE_MEASUREMENTID,
 };
 
 // Initialize Firebase
