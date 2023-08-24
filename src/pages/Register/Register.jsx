@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
@@ -8,6 +8,7 @@ import { AuthContext } from '../../provider/AuthProvider';
 
 const Register = () => {
     const {createUser} = useContext(AuthContext);
+    const [checked, setChecked] = useState(false)
     const handleRegister = event =>{
         event.preventDefault();
         const form = event.target;
@@ -25,6 +26,11 @@ const Register = () => {
             console.log(error)
         })
 
+    }
+    const handleTerms = event =>{
+        const checked= event.target.checked;
+        setChecked(checked)
+        
     }
     return (
         <>
@@ -79,13 +85,14 @@ const Register = () => {
                     <Form.Group className="mb-3">
                         <Form.Check
                             required
+                            onClick={handleTerms}
                             name="terms"
                             label="Agree to our terms and conditions !"
                             feedback="You must agree before submitting."
                             feedbackType="invalid"
                         />
                     </Form.Group>
-                    <Button type="submit" className='btn btn-warning border-none btn-sm'>Submit</Button>
+                    <Button type="submit" disabled={!checked} className='btn btn-warning border-none btn-sm'>Submit</Button>
                 </Form>
             </Container>
         </>
