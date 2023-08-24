@@ -8,6 +8,9 @@ import News from '../pages/news/News';
 import Editors from '../components/editor/editors';
 import Login from '../pages/Login/Login';
 import Register from '../pages/Register/Register';
+import Video from '../pages/Video/Video';
+import Travel from '../pages/travel/Travel';
+import Sports from '../pages/sports/Sports';
 
 const router = createBrowserRouter([
     {
@@ -57,6 +60,18 @@ const router = createBrowserRouter([
     {
       path:'register',
       element:<Register/>
+    },
+    {
+      path:'video',
+      element:<Video/>
+    },
+    {
+      path:'travel',
+      element:<Travel/>
+    },
+    {
+      path:'sports',
+      element:<Sports/>
     }
   ]);
 
