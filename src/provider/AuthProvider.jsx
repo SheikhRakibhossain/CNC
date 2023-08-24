@@ -8,12 +8,20 @@ const auth = getAuth(app);
 
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null);
+    const [loading, setLoading] = useState(true);
 
     const createUser = (email, password) =>{
         return createUserWithEmailAndPassword(auth, email, password)
+        setLoading(false)
     }
+
     const logIn = (email, password) =>{
         return signInWithEmailAndPassword(auth, email, password)
+        setLoading(false)
+    }
+
+    const signOut =()=>{
+        return signOut(auth);
     }
     // user observer created
     useEffect(()=>{
@@ -30,8 +38,10 @@ const AuthProvider = ({children}) => {
 
     const authInfo = {
         user,
+        loading,
         createUser,
         logIn,
+        signOut,
     };
     return (
         <AuthContext.Provider value={authInfo}>
