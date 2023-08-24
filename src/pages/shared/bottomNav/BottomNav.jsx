@@ -85,7 +85,7 @@ const BottomNav = () => {
                             <a className="nav-link active text-white" aria-current="page" href="#"><FaSearch/></a> 
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link active text-white" aria-current="page" href="#">{user ? <Button onClick={handleLogOut} className='text-white'>Logout</Button>:<FaUser/>}</a> 
+                            <a className="nav-link active text-white" aria-current="page" href="#">{user ? <Button onClick={handleLogOut} className='text-white'>Logout</Button>:<Link to='/login' className='text-white'><FaUser/></Link>}</a> 
                             </li>
                         </ul>
                     </div>
