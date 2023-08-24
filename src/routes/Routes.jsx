@@ -12,6 +12,7 @@ import Video from '../pages/Video/Video';
 import Travel from '../pages/travel/Travel';
 import Sports from '../pages/sports/Sports';
 import PrivateRoute from './PrivateRoute';
+import Terms from '../pages/termsAndCondition/Terms';
 
 const router = createBrowserRouter([
     {
@@ -73,6 +74,10 @@ const router = createBrowserRouter([
     {
       path:'sports',
       element:<PrivateRoute><Sports/></PrivateRoute>
+    },
+    {
+      path:'terms',
+      element:<Terms/>
     }
   ]);
 
