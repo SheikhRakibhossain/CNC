@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import { AuthContext } from '../../provider/AuthProvider';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
@@ -60,6 +60,7 @@ const Login = () => {
                     </Row>
                     <Button type="submit" className='btn btn-warning border-none btn-sm'>Submit</Button>
                 </Form>
+                <p>New to here ? please <Link to='/register' className="link text-underline text-red">Register</Link></p>
             </Container>
       </>
     );
