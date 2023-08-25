@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import logo from '../../../assets/logo.png'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import './BottomNav.css';
 import { FaSearch, FaUserCircle } from 'react-icons/fa';
 import { AuthContext } from '../../../provider/AuthProvider';
@@ -8,7 +8,7 @@ import { Button } from 'react-bootstrap';
 
 const BottomNav = () => {
     const {user, logOut} = useContext(AuthContext);
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     
     const handleLogOut = () =>{
         logOut()
@@ -20,7 +20,7 @@ const BottomNav = () => {
         <nav className="navbar navbar-expand-lg bg-black sticky-top">
             <div className="container-fluid">
                 {/* logo left side */}
-                <Link className="navbar-brand" href="#"><img src={logo} alt="logo" className='logo' /></Link>
+                <Link to='/' className="navbar-brand"><img src={logo} alt="logo" className='logo' /></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -28,65 +28,65 @@ const BottomNav = () => {
                     {/* Left side menu items */}
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 fw-semibold text-white">
                         <li className="nav-item">
-                            <a className="nav-link text-white active" aria-current="page" href="#"><Link to='/home' className='text-white'>Home</Link></a>
+                            <Link to='/' className="nav-link text-white active" aria-current="page" ><Link to='/home' className='text-white'>Home</Link></Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white active" aria-current="page" href="#">US</a>
+                            <Link to='/' className="nav-link text-white active" aria-current="page" href="#">US</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" href="#">World</a>
+                            <Link to='/' className="nav-link text-white" href="#">World</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white " aria-disabled="true">Politics</a>
+                            <Link to='/' className="nav-link text-white " aria-disabled="true">Politics</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" aria-disabled="true">Business</a>
+                            <Link to='/' className="nav-link text-white" aria-disabled="true">Business</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" aria-disabled="true">Opinions</a>
+                            <Link to='/' className="nav-link text-white" aria-disabled="true">Opinions</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white " aria-disabled="true">Health</a>
+                            <Link to='/' className="nav-link text-white " aria-disabled="true">Health</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" aria-disabled="true">Entertainment</a>
+                            <Link to='/' className="nav-link text-white" aria-disabled="true">Entertainment</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" aria-disabled="true">Style</a>
+                            <Link to='/' className="nav-link text-white" aria-disabled="true">Style</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" aria-disabled="true"><Link to='/travel' className='text-white'>Travel</Link></a>
+                            <Link to='/travel' className="nav-link text-white" aria-disabled="true">Travel</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" aria-disabled="true"><Link to='/sports' className='text-white'>Sports</Link></a>
+                            <Link to='/sports' className="nav-link text-white" aria-disabled="true">Sports</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" aria-disabled="true"><Link to='/video' className='text-white'>Video</Link></a>
+                            <Link to='/video' className="nav-link text-white" aria-disabled="true">Video</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" aria-disabled="true">Research</a>
+                            <Link to='/' className="nav-link text-white" aria-disabled="true">Research</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" aria-disabled="true">Education</a>
+                            <Link to='/' className="nav-link text-white" aria-disabled="true">Education</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link text-white" aria-disabled="true">Foods</a>
+                            <Link to='/' className="nav-link text-white" aria-disabled="true">Foods</Link>
                         </li>
                     </ul>
                     {/* Right nav bar */}
                     <div>
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                            <a className="nav-link active text-white" aria-current="page" href="#">Audio</a> 
+                            <Link to='/' className="nav-link active text-white" aria-current="page" href="#">Audio</Link> 
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link active text-white" aria-current="page" href="#">Live TV</a> 
+                            <Link to='/' className="nav-link active text-white" aria-current="page" href="#">Live TV</Link> 
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link active text-white" aria-current="page" href="#"><FaSearch/></a> 
+                            <Link to='/' className="nav-link active text-white" aria-current="page" href="#"><FaSearch/></Link> 
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link active text-white" aria-current="page" href="#">{user ? <Button onClick={handleLogOut} variant="warning" size="sm" style={{padding:'5px 10px'}}>Logout</Button>:<Link to='/login' className='text-white'><FaUserCircle/></Link>}</a> 
+                            <Link to='/' className="nav-link active text-white" aria-current="page">{user ? <Button onClick={handleLogOut} variant="warning" size="sm" style={{padding:'5px 10px'}}>Logout</Button>:<Link to='/login' className='text-white'><FaUserCircle/></Link>}</Link> 
                             </li>
                         </ul>
                     </div>
