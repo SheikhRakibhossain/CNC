@@ -8,7 +8,6 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const BottomNav = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -27,11 +26,11 @@ const BottomNav = () => {
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
-                        className="me-auto my-2 my-lg-0 text-white fw-bold fs-6"
-                        style={{ maxHeight: '200px'}}
+                        className="me-auto my-2 my-lg-0 text-white  fs-6"
+                        style={{ maxHeight:'200px'}}
                         navbarScroll
                     >
-                        <Link to='/'className='text-white p-1'>Home</Link>
+                       <Link to='/'className='text-white p-1'>Home</Link>
                        <Link to='/us'className='text-white p-1'>US</Link>
                        <Link to='/world'className='text-white p-1'>World</Link>
                        <Link to='/politics'className='text-white p-1'>Politics</Link>
@@ -49,7 +48,7 @@ const BottomNav = () => {
                     <Link to='/audio'className='text-white p-1'>Audio</Link>
                     <Link to='/livetv' className='text-white p-1'>Live TV </Link>
 
-                        {user ? <Button onClick={handleLogOut} variant="warning" size="sm" style={{padding:'5px 10px'}}>Logout</Button>:<Link to='/login' className='text-white'> <FaUserCircle/> </Link>}
+                        {user ? <Button onClick={handleLogOut} variant="warning" style={{padding:'5px 10px'}}>Logout</Button>:<Link to='/login' className='text-white ps-1'> <FaUserCircle/> </Link>}
                     </div>
                 </Navbar.Collapse>
             </Container>
