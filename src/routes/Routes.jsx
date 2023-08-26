@@ -14,6 +14,7 @@ import Sports from '../pages/sports/Sports';
 import PrivateRoute from './PrivateRoute';
 import Terms from '../pages/termsAndCondition/Terms';
 import Us from '../pages/US/Us';
+import UserLayout from '../layouts/UserLayout';
 
 const router = createBrowserRouter([
     {
@@ -57,13 +58,25 @@ const router = createBrowserRouter([
 
     },
     {
-      path:'login',
-      element:<Login/>
+      path:'/',
+      element:<UserLayout/>,
+      children:[
+
+        {
+          path:'login',
+          element:<Login/>
+        },
+        {
+          path:'register',
+          element:<Register/>
+        },
+        
+      ]
+
+
     },
-    {
-      path:'register',
-      element:<Register/>
-    },
+    
+   
     {
       path:'video',
       element:<PrivateRoute><Video/></PrivateRoute>
