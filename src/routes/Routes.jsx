@@ -13,6 +13,7 @@ import Travel from '../pages/travel/Travel';
 import Sports from '../pages/sports/Sports';
 import PrivateRoute from './PrivateRoute';
 import Terms from '../pages/termsAndCondition/Terms';
+import Us from '../pages/US/Us';
 
 const router = createBrowserRouter([
     {
@@ -78,6 +79,10 @@ const router = createBrowserRouter([
     {
       path:'terms',
       element:<Terms/>
+    },
+    {
+      path:'us',
+      element:<Us/>
     }
   ]);
 
