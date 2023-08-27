@@ -2,26 +2,27 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import image1 from '../../assets/girlscat/girl.jpg'
 import image2 from '../../assets/girlscat/cutegirl.jpg'
+import image3 from '../../assets/girlscat/cutegirls.jpg'
 
 const TravelHero = () => {
     return (
         <Container>
             <Row>
-                <Col className='min-h-'>
+                <Col sm={6}>
                     <img src={image1} alt="" />
                 </Col>
 
-                <Col>
+                <Col sm={6}>
                     <Row>
-                        <img src={image2} alt="" />
+                        <img style={{ maxHeight: '300px' }} src={image3} alt="" />
                     </Row>
-                    <Row>
+                    <Row className='pt-4'>
                         <Col>
-                            <img src={image1} alt="" />
+                            <img src={image2} alt="" />
                         </Col>
 
                         <Col>
-                            <img src={image1} alt="" />
+                            <img src={image2} alt="" />
                         </Col>
                     </Row>
 
