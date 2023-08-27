@@ -1,10 +1,11 @@
 import React from 'react';
+import TravelHero from './TravelHero';
 
 const Travel = () => {
     return (
-        <div>
-            I am Travel page.
-        </div>
+        <>
+            <TravelHero/>
+        </>
     );
 };
 
