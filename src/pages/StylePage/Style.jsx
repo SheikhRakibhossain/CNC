@@ -1,10 +1,12 @@
 import React from 'react';
+import StyleSlider from './StyleSlider';
 
 const Style = () => {
     return (
-        <div>
-            <h4>I am style page</h4>
-        </div>
+       <>
+       <StyleSlider/>
+       
+       </>
     );
 };
 
