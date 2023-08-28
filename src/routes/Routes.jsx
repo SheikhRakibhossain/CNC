@@ -16,6 +16,7 @@ import Terms from '../pages/termsAndCondition/Terms';
 import Us from '../pages/US/Us';
 import UserLayout from '../layouts/UserLayout';
 import NavPageLayout from '../layouts/NavPageLayout';
+import Style from '../pages/StylePage/Style';
 
 const router = createBrowserRouter([
   {
@@ -99,6 +100,11 @@ const router = createBrowserRouter([
       {
         path: 'us',
         element: <Us />
+      }
+      ,
+      {
+        path: 'style',
+        element: <Style/>
       }
     ]
   }
