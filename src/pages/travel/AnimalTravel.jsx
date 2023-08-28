@@ -1,5 +1,7 @@
 import React from 'react';
 import animal1 from '../../assets/girlscat/dog.jpg'
+import animal3 from '../../assets/girlscat/dog3.jpg'
+import animal2 from '../../assets/girlscat/dolfin.jpg'
 import { Col, Container, Row } from 'react-bootstrap';
 
 const AnimalTravel = () => {
@@ -27,7 +29,7 @@ const AnimalTravel = () => {
                         <div className="card mb-3">
                             <div className="row g-0">
                                 <div className="col-md-4">
-                                    <img src={animal1} className="img-fluid rounded-start" alt="animal image" />
+                                    <img src={animal2} className="img-fluid rounded-start" alt="animal image" />
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
@@ -43,7 +45,7 @@ const AnimalTravel = () => {
                         <div className="card mb-3">
                             <div className="row g-0">
                                 <div className="col-md-4">
-                                    <img src={animal1} className="img-fluid rounded-start" alt="animal image" />
+                                    <img src={animal3} className="img-fluid rounded-start" alt="animal image" />
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
