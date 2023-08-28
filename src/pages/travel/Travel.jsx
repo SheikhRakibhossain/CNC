@@ -10,9 +10,10 @@ const Travel = () => {
         <>
             <TravelHero/>
             <TravelCard/>
-            <TravelMap/>
-            <NewsLetter/>
+            <TravelCard/>
             <AnimalTravel/>
+            <NewsLetter/>
+            <TravelMap/>
         </>
     );
 };

@@ -7,7 +7,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 const AnimalTravel = () => {
     return (
         <>
-            <Container>
+            <Container className='my-5'>
                 <Row>
                     <Col md={4} xs={12}>
                         <div className="card mb-3">
