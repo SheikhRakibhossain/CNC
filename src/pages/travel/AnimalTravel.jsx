@@ -7,8 +7,8 @@ const AnimalTravel = () => {
         <>
             <Container>
                 <Row>
-                    <Col>
-                        <div className="card mb-3" style={{ maxWidth: '540px;' }}>
+                    <Col md={4} xs={12}>
+                        <div className="card mb-3">
                             <div className="row g-0">
                                 <div className="col-md-4">
                                     <img src={animal1} className="img-fluid rounded-start" alt="animal image" />
@@ -23,8 +23,8 @@ const AnimalTravel = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col>
-                        <div className="card mb-3" style={{ maxWidth: '540px;' }}>
+                    <Col md={4} xs={12}>
+                        <div className="card mb-3">
                             <div className="row g-0">
                                 <div className="col-md-4">
                                     <img src={animal1} className="img-fluid rounded-start" alt="animal image" />
@@ -39,8 +39,8 @@ const AnimalTravel = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col>
-                        <div className="card mb-3" style={{ maxWidth: '540px;' }}>
+                    <Col md={4} xs={12}>
+                        <div className="card mb-3">
                             <div className="row g-0">
                                 <div className="col-md-4">
                                     <img src={animal1} className="img-fluid rounded-start" alt="animal image" />
