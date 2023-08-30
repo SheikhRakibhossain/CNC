@@ -8,6 +8,10 @@ import latestImage1 from '../../assets/girlscat/latest-11.jpg';
 import latestImage2 from '../../assets/girlscat/latest-2.jpg';
 import latestImage3 from '../../assets/girlscat/latest-3.jpg';
 import latestImage4 from '../../assets/girlscat/latestImage-4.jpg';
+import cosmology from "../../assets/girlscat/cosmology.webp"
+import vermentLaw from "../../assets/girlscat/vermentLaw.webp"
+import jhosFrankLink from "../../assets/girlscat/jhosFrankLink.webp"
+
 import './LatestStyle.css';
 
 const LatestStyle = () => {
@@ -22,7 +26,49 @@ const LatestStyle = () => {
                                 <h3 className='text-uppercase fst-italic py-4 fs-4'>Why this photographer wants to see more women like her behind the lens...</h3>
                             </Link>
                         </div>
-
+                        {/* Horizontal card section */}
+                        <div className="card mb-3 mt-4" style={{maxWidth: '540px;'}}>
+                            <div className="row g-0 latestCard ">
+                                <div className="col-md-4">
+                                    <img src={cosmology} className="img-fluid rounded-start" alt="..." />
+                                </div>
+                                <div className="col-md-8">
+                                    <div className="card-body">
+                                        <p>
+                                            ‘Cosmology’: The Japanese skincare range designed for astronauts...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card mb-3 mt-4" style={{maxWidth: '540px;'}}>
+                            <div className="row g-0 latestCard ">
+                                <div className="col-md-4">
+                                    <img src={cosmology} className="img-fluid rounded-start" alt="..." />
+                                </div>
+                                <div className="col-md-8">
+                                    <div className="card-body">
+                                        <p>
+                                            ‘Cosmology’: The Japanese skincare range designed for astronauts...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card mb-3 mt-4" style={{maxWidth: '540px;'}}>
+                            <div className="row g-0 latestCard ">
+                                <div className="col-md-4">
+                                    <img src={cosmology} className="img-fluid rounded-start" alt="..." />
+                                </div>
+                                <div className="col-md-8">
+                                    <div className="card-body">
+                                        <p>
+                                            ‘Cosmology’: The Japanese skincare range designed for astronauts...
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </Col>
 

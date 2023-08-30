@@ -2,5 +2,5 @@
     transform: scale(1.02);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
     transition: .5s transform ease-out,.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-
+    cursor: pointer;
 }
