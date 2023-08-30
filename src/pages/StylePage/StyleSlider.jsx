@@ -3,11 +3,11 @@ import Carousel from 'react-bootstrap/Carousel';
 import style1 from '../../assets/girlscat/style.jpg'
 import style2 from '../../assets/girlscat/style2.jpg'
 import style3 from '../../assets/girlscat/style3.jpg'
-import { Container } from 'react-bootstrap';
 
 const StyleSlider = () => {
     return (
-        <Container fluid>
+        <>
+        {/* slider only here */}
             <Carousel>
                 <Carousel.Item>
                     <img src={style2} />
@@ -33,7 +33,7 @@ const StyleSlider = () => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
-        </Container>
+        </>
     );
 };
 
