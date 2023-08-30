@@ -44,12 +44,12 @@ const LatestStyle = () => {
                         <div className="card mb-3 mt-4" style={{maxWidth: '540px;'}}>
                             <div className="row g-0 latestCard ">
                                 <div className="col-md-4">
-                                    <img src={cosmology} className="img-fluid rounded-start" alt="..." />
+                                    <img src={jhosFrankLink} className="img-fluid rounded-start" alt="frank link" />
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
                                         <p>
-                                            ‘Cosmology’: The Japanese skincare range designed for astronauts...
+                                        The last photos of John Franklin’s doomed polar expedition party are going on sale...
                                         </p>
                                     </div>
                                 </div>
@@ -58,12 +58,12 @@ const LatestStyle = () => {
                         <div className="card mb-3 mt-4" style={{maxWidth: '540px;'}}>
                             <div className="row g-0 latestCard ">
                                 <div className="col-md-4">
-                                    <img src={cosmology} className="img-fluid rounded-start" alt="..." />
+                                    <img src={vermentLaw} className="img-fluid rounded-start" alt="..." />
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
                                         <p>
-                                            ‘Cosmology’: The Japanese skincare range designed for astronauts...
+                                        Vermont law school can hide a controversial mural depicting slavery, court rules...
                                         </p>
                                     </div>
                                 </div>
