@@ -78,7 +78,6 @@ const LatestStyle = () => {
                                 <div className="col-md-8">
                                     <div className="card-body">
                                         <p>
-
                                             Once, if you were talking about going to the salon for a trim, a restyle....
                                         </p>
                                     </div>
