@@ -15,27 +15,30 @@ const LatestStyle = () => {
         <>
             <Container className='py-4 container-fluid'>
                 <Row>
-                    <Col lg={6} xs={12} className='latestCard '>
-                        <Link to='/' >
-                            <img src={latestMainImage} alt="card Image" />
-                            <h3 className='text-uppercase fst-italic py-4 fw-light link-offset-3-hover'>Why this photographer wants to see more women like her behind the lens</h3>
-                        </Link>
+                    <Col lg={6} xs={12} >
+                        <div className='latestCard '>
+                            <Link to='/' >
+                                <img src={latestMainImage} alt="card Image" />
+                                <h3 className='text-uppercase fst-italic py-4 fs-4'>Why this photographer wants to see more women like her behind the lens...</h3>
+                            </Link>
+                        </div>
+
 
                     </Col>
 
                     <Col lg={3} xs={12}>
                         <Link to='/' >
                             <img src={latestImage3} alt="card Image" />
-                            <h3 className='fs-5 text-uppercase fst-normal py-2 fw-bold '>Why this photographer wants to see more women like her behind the lens</h3>
+                            <h3 className='fs-6 text-uppercase fst-normal py-2 fw-bold '>Why this photographer wants to see more women like her behind the lens</h3>
                         </Link>
 
                         <Link to='/' >
                             <img src={latestImage1} alt="card Image" />
-                            <h3 className='fs-5 text-uppercase fst-normal py-2 fw-bold '>Why this photographer wants to see more women like her behind the lens</h3>
+                            <h3 className='fs-6 text-uppercase fst-normal py-2 fw-bold '>Why this photographer wants to see more women like her behind the lens</h3>
                         </Link>
                         <Link to='/' >
                             <img src={latestImage2} alt="card Image" />
-                            <h3 className='fs-5 text-uppercase fst-normal py-2 fw-bold '>Why this photographer wants to see more women like her behind the lens</h3>
+                            <h3 className='fs-6 text-uppercase fst-normal py-2 fw-bold '>Why this photographer wants to see more women like her behind the lens</h3>
                         </Link>
 
                     </Col>
@@ -43,7 +46,7 @@ const LatestStyle = () => {
                     <Col lg={3} xs={12}>
                         <Link to='/' >
                             <img src={latestImage4} alt="card Image" />
-                            <h3 className='text-uppercase fst-italic py-4 fw-light link-offset-3-hover'>Why this photographer wants to see more women like her behind the lens</h3>
+                            <p>Why this photographer wants to see more women like her behind the lens</p>
                         </Link>
                     </Col>
                 </Row>
