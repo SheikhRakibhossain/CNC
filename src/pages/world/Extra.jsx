@@ -1,6 +1,9 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
-import marriage from '../../assets/world/koreanMarriage.jpg'
+import marriage from '../../assets/world/koreanMarriage.jpg';
+import home from '../../assets/world/home.jpg';
+import mother from '../../assets/world/mother.jpg';
+import hero from '../../assets/world/battleHero.jpg';
 
 const Extra = () => {
     return (
@@ -11,7 +14,7 @@ const Extra = () => {
                     <div>
                         <hr className='border border-black opacity-100' />
                         <p className='fs-6 fw-bold text-black pt-0'>ASIA</p>
-                        <img src={marriage} alt="arms" />
+                        <img src={home} alt="arms" />
                         <h5 className='text-link py-2'>Only one third of young South Koreans feel positively about marriage, survey finds</h5>
                     </div>
                     <hr className='border border-black opacity-25' />
@@ -25,7 +28,7 @@ const Extra = () => {
                     <div>
                         <hr className='border border-black opacity-100' />
                         <p className='fs-6 fw-bold text-black pt-0'>ASIA</p>
-                        <img src={marriage} alt="arms" />
+                        <img src={mother} alt="arms" />
                         <h5 className='text-link py-2'>Only one third of young South Koreans feel positively about marriage, survey finds</h5>
                     </div>
                     <hr className='border border-black opacity-25' />
@@ -39,7 +42,7 @@ const Extra = () => {
                     <div>
                         <hr className='border border-black opacity-100' />
                         <p className='fs-6 fw-bold text-black pt-0'>ASIA</p>
-                        <img src={marriage} alt="arms" />
+                        <img src={hero} alt="arms" />
                         <h5 className='text-link py-2'>Only one third of young South Koreans feel positively about marriage, survey finds</h5>
                     </div>
                     <hr className='border border-black opacity-25' />
@@ -53,7 +56,7 @@ const Extra = () => {
                     <div>
                         <hr className='border border-black opacity-100' />
                         <p className='fs-6 fw-bold text-black pt-0'>ASIA</p>
-                        <img src={marriage} alt="arms" />
+                        <img src={mother} alt="arms" />
                         <h5 className='text-link py-2'>Only one third of young South Koreans feel positively about marriage, survey finds</h5>
                     </div>
                     <hr className='border border-black opacity-25' />
@@ -67,7 +70,7 @@ const Extra = () => {
                     <div>
                         <hr className='border border-black opacity-100' />
                         <p className='fs-6 fw-bold text-black pt-0'>ASIA</p>
-                        <img src={marriage} alt="arms" />
+                        <img src={hero} alt="arms" />
                         <h5 className='text-link py-2'>Only one third of young South Koreans feel positively about marriage, survey finds</h5>
                     </div>
                     <hr className='border border-black opacity-25' />
@@ -81,7 +84,7 @@ const Extra = () => {
                     <div>
                         <hr className='border border-black opacity-100' />
                         <p className='fs-6 fw-bold text-black pt-0'>ASIA</p>
-                        <img src={marriage} alt="arms" />
+                        <img src={home} alt="arms" />
                         <h5 className='text-link py-2'>Only one third of young South Koreans feel positively about marriage, survey finds</h5>
                     </div>
                     <hr className='border border-black opacity-25' />
