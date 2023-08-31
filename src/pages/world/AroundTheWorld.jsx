@@ -6,6 +6,9 @@ import carbon from '../../assets/world/carbondioxide.jpg';
 import fire from '../../assets/world/fire.jpg';
 import moon from '../../assets/world/superMoon.jpg';
 import thunder from '../../assets/world/thunderLight.jpg';
+import map from '../../assets/world/africa.jpg';
+import swimmer from '../../assets/world/swimmer.jpg';
+import marriage from '../../assets/world/koreanMarriage.jpg';
 
 
 const AroundTheWorld = () => {
@@ -75,8 +78,8 @@ const AroundTheWorld = () => {
                     <div>
                         <hr className='border border-black opacity-100' />
                         <p className='fs-6 fw-bold text-black pt-0'>AFRICA</p>
-                        <img src={arms} alt="arms" />
-                        <h5 className='text-link py-2'>Well-known Ukrainian pilot ‘Juice’ among 3 dead in plane crash</h5>
+                        <img src={map} alt="arms" />
+                        <h5 className='text-link py-2'>Police raid suspected gay wedding in Nigeria and arrest more than 200 people</h5>
                     </div>
                     <hr className='border border-black opacity-25' />
                     <p className='text-link'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam quibusdam dolorum quas eum.</p>
@@ -88,9 +91,10 @@ const AroundTheWorld = () => {
                 <Col lg={4}>
                     <div>
                         <hr className='border border-black opacity-100' />
-                        <p className='fs-6 fw-bold text-black pt-0'>EUROPE</p>
-                        <img src={arms} alt="arms" />
-                        <h5 className='text-link py-2'>Well-known Ukrainian pilot ‘Juice’ among 3 dead in plane crash</h5>
+                        <p className='fs-6 fw-bold text-black pt-0'>AMERICAS</p>
+                        <img src={swimmer} alt="arms" />
+                        <h5 className='text-link py-2'>
+Former US swimmer’s death in the US Virgin Islands caused by accidental fentanyl intoxication, autopsy says</h5>
                     </div>
                     <hr className='border border-black opacity-25' />
                     <p className='text-link'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam quibusdam dolorum quas eum.</p>
@@ -102,9 +106,9 @@ const AroundTheWorld = () => {
                 <Col lg={4}>
                     <div>
                         <hr className='border border-black opacity-100' />
-                        <p className='fs-6 fw-bold text-black pt-0'>EUROPE</p>
-                        <img src={arms} alt="arms" />
-                        <h5 className='text-link py-2'>Well-known Ukrainian pilot ‘Juice’ among 3 dead in plane crash</h5>
+                        <p className='fs-6 fw-bold text-black pt-0'>ASIA</p>
+                        <img src={marriage} alt="arms" />
+                        <h5 className='text-link py-2'>Only one third of young South Koreans feel positively about marriage, survey finds</h5>
                     </div>
                     <hr className='border border-black opacity-25' />
                     <p className='text-link'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam quibusdam dolorum quas eum.</p>
