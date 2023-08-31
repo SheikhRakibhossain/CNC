@@ -3,6 +3,7 @@ import StyleSlider from './StyleSlider';
 import LatestStyle from './LatestStyle';
 import Arts from './Arts';
 import Architecture from './Architecture';
+import Fashion from './Fashion';
 
 const Style = () => {
     return (
@@ -11,6 +12,7 @@ const Style = () => {
             <LatestStyle />
             <Arts />
             <Architecture/>
+            <Fashion/>
 
         </>
     );
