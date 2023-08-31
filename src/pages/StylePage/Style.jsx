@@ -4,6 +4,7 @@ import LatestStyle from './LatestStyle';
 import Arts from './Arts';
 import Architecture from './Architecture';
 import Fashion from './Fashion';
+import Design from './Design';
 
 const Style = () => {
     return (
@@ -13,6 +14,7 @@ const Style = () => {
             <Arts />
             <Architecture/>
             <Fashion/>
+            <Design/>
 
         </>
     );
