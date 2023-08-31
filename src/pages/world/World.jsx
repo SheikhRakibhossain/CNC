@@ -4,6 +4,7 @@ import WorldHero from './WorldHero';
 import './World.css'
 import WorldVideo from './WorldVideo';
 import AroundTheWorld from './AroundTheWorld';
+import Extra from './Extra';
 
 const World = () => {
     return (
@@ -12,6 +13,7 @@ const World = () => {
                 <WorldHero />
                 <WorldVideo/>
                 <AroundTheWorld/>
+                <Extra/>
             </Container>
 
         </>
