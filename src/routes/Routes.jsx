@@ -17,6 +17,7 @@ import Us from '../pages/US/Us';
 import UserLayout from '../layouts/UserLayout';
 import NavPageLayout from '../layouts/NavPageLayout';
 import Style from '../pages/StylePage/Style';
+import World from '../pages/world/World';
 
 const router = createBrowserRouter([
   {
@@ -105,6 +106,11 @@ const router = createBrowserRouter([
       {
         path: 'style',
         element: <Style/>
+      }
+      ,
+      {
+        path: 'world',
+        element: <World/>
       }
     ]
   }
