@@ -71,7 +71,48 @@ const AroundTheWorld = () => {
                         </Col>
                     </Row>
                 </Col>
-
+                <Col lg={4}>
+                    <div>
+                        <hr className='border border-black opacity-100' />
+                        <p className='fs-6 fw-bold text-black pt-0'>AFRICA</p>
+                        <img src={arms} alt="arms" />
+                        <h5 className='text-link py-2'>Well-known Ukrainian pilot ‘Juice’ among 3 dead in plane crash</h5>
+                    </div>
+                    <hr className='border border-black opacity-25' />
+                    <p className='text-link'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam quibusdam dolorum quas eum.</p>
+                    <hr className='border border-black opacity-25' />
+                    <p className='text-link'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam quibusdam dolorum quas eum.</p>
+                    <hr className='border border-black opacity-25' />
+                    <p className='text-link'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam quibusdam dolorum quas eum.</p>
+                </Col>
+                <Col lg={4}>
+                    <div>
+                        <hr className='border border-black opacity-100' />
+                        <p className='fs-6 fw-bold text-black pt-0'>EUROPE</p>
+                        <img src={arms} alt="arms" />
+                        <h5 className='text-link py-2'>Well-known Ukrainian pilot ‘Juice’ among 3 dead in plane crash</h5>
+                    </div>
+                    <hr className='border border-black opacity-25' />
+                    <p className='text-link'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam quibusdam dolorum quas eum.</p>
+                    <hr className='border border-black opacity-25' />
+                    <p className='text-link'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam quibusdam dolorum quas eum.</p>
+                    <hr className='border border-black opacity-25' />
+                    <p className='text-link'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam quibusdam dolorum quas eum.</p>
+                </Col>
+                <Col lg={4}>
+                    <div>
+                        <hr className='border border-black opacity-100' />
+                        <p className='fs-6 fw-bold text-black pt-0'>EUROPE</p>
+                        <img src={arms} alt="arms" />
+                        <h5 className='text-link py-2'>Well-known Ukrainian pilot ‘Juice’ among 3 dead in plane crash</h5>
+                    </div>
+                    <hr className='border border-black opacity-25' />
+                    <p className='text-link'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam quibusdam dolorum quas eum.</p>
+                    <hr className='border border-black opacity-25' />
+                    <p className='text-link'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam quibusdam dolorum quas eum.</p>
+                    <hr className='border border-black opacity-25' />
+                    <p className='text-link'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam quibusdam dolorum quas eum.</p>
+                </Col>
             </Row>
 
         </>
