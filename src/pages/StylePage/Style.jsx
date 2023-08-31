@@ -5,6 +5,7 @@ import Arts from './Arts';
 import Architecture from './Architecture';
 import Fashion from './Fashion';
 import Design from './Design';
+import MosheSafedi from './MosheSafedi';
 
 const Style = () => {
     return (
@@ -15,6 +16,7 @@ const Style = () => {
             <Architecture/>
             <Fashion/>
             <Design/>
+            <MosheSafedi/>
 
         </>
     );

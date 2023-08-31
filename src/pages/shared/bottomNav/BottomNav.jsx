@@ -48,7 +48,7 @@ const BottomNav = () => {
                     <Link to='/audio'className='text-white p-1'>Audio</Link>
                     <Link to='/livetv' className='text-white p-1'>Live TV </Link>
 
-                        {user ? <Button onClick={handleLogOut} variant="warning" style={{padding:'5px 10px'}}>Logout</Button>:<Link to='/login' className='text-white ps-1'> <FaUserCircle/> </Link>}
+                        {user ? <Button className='ms-2' onClick={handleLogOut} variant="warning" style={{padding:'5px 10px', }}>Logout</Button>:<Link to='/login' className='text-white ps-1'> <FaUserCircle/> </Link>}
                     </div>
                 </Navbar.Collapse>
             </Container>
