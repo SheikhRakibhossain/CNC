@@ -6,7 +6,7 @@ import './World.css'
 const World = () => {
     return (
         <>
-            <Container>
+            <Container className='py-5'>
                 <WorldHero />
             </Container>
 
