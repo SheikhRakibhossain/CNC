@@ -3,10 +3,10 @@ import Container from 'react-bootstrap/esm/Container';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 
-import womenCup1 from '../../assets/sports/womenCup1.jpg';
-import womenCup2 from '../../assets/sports/womenCUp2.jpg';
-import womenCup3 from '../../assets/sports/womenCUp2.jpg';
-import womenCup4 from '../../assets/sports/womenCup3.jpg';
+import profile1 from '../../assets/sports/profile1.jpg';
+import profile2 from '../../assets/sports/profile2.jpg';
+import profile3 from '../../assets/sports/profile3.jpg';
+import profile4 from '../../assets/sports/profile4.jpg';
 // import womenCup5 from '../../assets/sports/womenCup-4.jpg';
 
 const Profiles = () => {
@@ -19,7 +19,7 @@ const Profiles = () => {
         <hr className="border border-dark " />
         <CardGroup className='gap-3 py-4'>
       <Card >
-        <Card.Img variant="top" src={womenCup1} />
+        <Card.Img variant="top" src={profile1} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -32,7 +32,7 @@ const Profiles = () => {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src={womenCup2} />
+        <Card.Img variant="top" src={profile2} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -45,7 +45,7 @@ const Profiles = () => {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src={womenCup3} />
+        <Card.Img variant="top" src={profile3} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -59,7 +59,7 @@ const Profiles = () => {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src={womenCup4} />
+        <Card.Img variant="top" src={profile4} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
