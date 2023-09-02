@@ -1,5 +1,13 @@
 import React from 'react';
 import Container from 'react-bootstrap/esm/Container';
+import Card from 'react-bootstrap/Card';
+import CardGroup from 'react-bootstrap/CardGroup';
+
+import womenCup1 from '../../assets/sports/womenCup1.jpg';
+import womenCup2 from '../../assets/sports/womenCUp2.jpg';
+import womenCup3 from '../../assets/sports/womenCUp2.jpg';
+import womenCup4 from '../../assets/sports/womenCup3.jpg';
+import womenCup5 from '../../assets/sports/womenCup-4.jpg';
 
 const WomensWorld = () => {
     return (
@@ -8,9 +16,9 @@ const WomensWorld = () => {
             
         <h1>Women's World Cup in depth</h1>
         <hr className="border border-dark " />
-        <CardGroup>
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <CardGroup className='gap-3 py-4'>
+      <Card >
+        <Card.Img variant="top" src={womenCup1} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -23,7 +31,7 @@ const WomensWorld = () => {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src={womenCup2} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -36,7 +44,7 @@ const WomensWorld = () => {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src={womenCup3} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
@@ -50,7 +58,7 @@ const WomensWorld = () => {
         </Card.Footer>
       </Card>
       <Card>
-        <Card.Img variant="top" src="holder.js/100px160" />
+        <Card.Img variant="top" src={womenCup4} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
           <Card.Text>
