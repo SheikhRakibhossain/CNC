@@ -1,4 +1,13 @@
 import React from 'react';
+import Container from 'react-bootstrap/esm/Container';
+import Card from 'react-bootstrap/Card';
+import CardGroup from 'react-bootstrap/CardGroup';
+
+import womenCup1 from '../../assets/sports/womenCup1.jpg';
+import womenCup2 from '../../assets/sports/womenCUp2.jpg';
+import womenCup3 from '../../assets/sports/womenCUp2.jpg';
+import womenCup4 from '../../assets/sports/womenCup3.jpg';
+// import womenCup5 from '../../assets/sports/womenCup-4.jpg';
 
 const Profiles = () => {
     return (
