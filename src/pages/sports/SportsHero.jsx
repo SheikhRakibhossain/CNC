@@ -122,6 +122,18 @@ const SportsHero = () => {
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit</p>
                         <hr className="border opacity-50" />
                         
+                        <hr className="border opacity-50" />
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit</p>
+                        <hr className="border opacity-50" />
+                        
+                        <hr className="border opacity-50" />
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit</p>
+                        <hr className="border opacity-50" />
+                        
+                        <hr className="border opacity-50" />
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit</p>
+                        <hr className="border opacity-50" />
+                        
                         
 
                     </Col>
