@@ -10,6 +10,11 @@ import hero2 from '../../assets/sports/hero2.jpg';
 import hero3 from '../../assets/sports/hero3.jpg';
 import hero4 from '../../assets/sports/hero4.jpg';
 import hero5 from '../../assets/sports/hero5.jpg';
+import BilliAndZine from '../../assets/sports/BilliAndZine.jpg';
+import novakand from '../../assets/sports/novakandVizi.jpg';
+import jhon from '../../assets/sports/Jhon.jpg';
+import billi from '../../assets/sports/BilliAndZine.jpg';
+
 
 const SportsHero = () => {
     return (
@@ -123,13 +128,29 @@ const SportsHero = () => {
 
                     <Col lg={3} xs={12}>
                         <Link to='/' >
-                            {/* <img src={latestImage4} alt="card Image" /> */}
+                            <img src={billi} alt="card Image" />
+                            <p>Why this photographer wants to see more women like her behind the lens</p>
+                        </Link>
+                        <Link to='/' >
+                            <img src={novakand} alt="card Image" />
+                            <p>Why this photographer wants to see more women like her behind the lens</p>
+                        </Link>
+                        <Link to='/' >
+                            <img src={jhon} alt="card Image" />
+                            <p>Why this photographer wants to see more women like her behind the lens</p>
+                        </Link>
+                        <Link to='/' >
+                            <img src={BilliAndZine} alt="card Image" />
+                            <p>Why this photographer wants to see more women like her behind the lens</p>
+                        </Link>
+                        <Link to='/' >
+                            <img src={hero3} alt="card Image" />
                             <p>Why this photographer wants to see more women like her behind the lens</p>
                         </Link>
                     </Col>
                 </Row>
 
-            </Container>
+        </Container>
     );
 };
 
