@@ -5,6 +5,11 @@ import Row from 'react-bootstrap/esm/Row';
 import { Link } from 'react-router-dom';
 import novak from '../../assets/sports/Novak.jpg';
 import Ertz from '../../assets/sports/Ertz.jpg';
+import hero1 from '../../assets/sports/hero1.jpg';
+import hero2 from '../../assets/sports/hero2.jpg';
+import hero3 from '../../assets/sports/hero3.jpg';
+import hero4 from '../../assets/sports/hero4.jpg';
+import hero5 from '../../assets/sports/hero5.jpg';
 
 const SportsHero = () => {
     return (
@@ -21,7 +26,7 @@ const SportsHero = () => {
                         <div className="card mb-3 mt-4" style={{ maxWidth: '540px;' }}>
                             <div className="row g-0 latestCard ">
                                 <div className="col-md-4">
-                                    {/* <img src={cosmology} className="img-fluid rounded-start" alt="..." /> */}
+                                    <img src={hero1} className="img-fluid rounded-start" alt="..." />
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
@@ -35,7 +40,7 @@ const SportsHero = () => {
                         <div className="card mb-3 mt-4" style={{ maxWidth: '540px;' }}>
                             <div className="row g-0 latestCard ">
                                 <div className="col-md-4">
-                                    {/* <img src={jhosFrankLink} className="img-fluid rounded-start" alt="frank link" /> */}
+                                    <img src={hero2} className="img-fluid rounded-start" alt="frank link" />
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
@@ -49,7 +54,7 @@ const SportsHero = () => {
                         <div className="card mb-3 mt-4" style={{ maxWidth: '540px;' }}>
                             <div className="row g-0 latestCard ">
                                 <div className="col-md-4">
-                                    {/* <img src={vermentLaw} className="img-fluid rounded-start" alt="..." /> */}
+                                    <img src={hero3} className="img-fluid rounded-start" alt="..." />
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
@@ -63,7 +68,21 @@ const SportsHero = () => {
                         <div className="card mb-3 mt-4" style={{ maxWidth: '540px;' }}>
                             <div className="row g-0 latestCard ">
                                 <div className="col-md-4">
-                                    {/* <img src={bigBusiness} className="img-fluid rounded-start" alt="..." /> */}
+                                    <img src={hero4} className="img-fluid rounded-start" alt="..." />
+                                </div>
+                                <div className="col-md-8">
+                                    <div className="card-body">
+                                        <p>
+                                            Once, if you were talking about going to the salon for a trim, a restyle....
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card mb-3 mt-4" style={{ maxWidth: '540px;' }}>
+                            <div className="row g-0 latestCard ">
+                                <div className="col-md-4">
+                                    <img src={hero5} className="img-fluid rounded-start" alt="..." />
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
