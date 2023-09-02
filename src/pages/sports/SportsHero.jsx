@@ -19,6 +19,9 @@ import billi from '../../assets/sports/BilliAndZine.jpg';
 const SportsHero = () => {
     return (
         <Container className='py-4 container-fluid'>
+            
+            <h1>Sports World</h1>
+            <hr className="border border-dark " />
                 <Row>
                     <Col lg={6} xs={12} >
                         <div className='latestCard '>
