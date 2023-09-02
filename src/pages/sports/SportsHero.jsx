@@ -3,6 +3,8 @@ import Col from 'react-bootstrap/esm/Col';
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 import { Link } from 'react-router-dom';
+import novak from '../../assets/sports/Novak.jpg';
+import Ertz from '../../assets/sports/Ertz.jpg';
 
 const SportsHero = () => {
     return (
@@ -11,7 +13,7 @@ const SportsHero = () => {
                     <Col lg={6} xs={12} >
                         <div className='latestCard '>
                             <Link to='/' >
-                                <img src={latestMainImage} alt="card Image" />
+                                <img src={novak} alt="Novaks image" />
                                 <h3 className='text-uppercase fst-italic py-4 fs-4'>Why this photographer wants to see more women like her behind the lens...</h3>
                             </Link>
                         </div>
@@ -19,7 +21,7 @@ const SportsHero = () => {
                         <div className="card mb-3 mt-4" style={{ maxWidth: '540px;' }}>
                             <div className="row g-0 latestCard ">
                                 <div className="col-md-4">
-                                    <img src={cosmology} className="img-fluid rounded-start" alt="..." />
+                                    {/* <img src={cosmology} className="img-fluid rounded-start" alt="..." /> */}
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
@@ -33,7 +35,7 @@ const SportsHero = () => {
                         <div className="card mb-3 mt-4" style={{ maxWidth: '540px;' }}>
                             <div className="row g-0 latestCard ">
                                 <div className="col-md-4">
-                                    <img src={jhosFrankLink} className="img-fluid rounded-start" alt="frank link" />
+                                    {/* <img src={jhosFrankLink} className="img-fluid rounded-start" alt="frank link" /> */}
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
@@ -47,7 +49,7 @@ const SportsHero = () => {
                         <div className="card mb-3 mt-4" style={{ maxWidth: '540px;' }}>
                             <div className="row g-0 latestCard ">
                                 <div className="col-md-4">
-                                    <img src={vermentLaw} className="img-fluid rounded-start" alt="..." />
+                                    {/* <img src={vermentLaw} className="img-fluid rounded-start" alt="..." /> */}
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
@@ -61,7 +63,7 @@ const SportsHero = () => {
                         <div className="card mb-3 mt-4" style={{ maxWidth: '540px;' }}>
                             <div className="row g-0 latestCard ">
                                 <div className="col-md-4">
-                                    <img src={bigBusiness} className="img-fluid rounded-start" alt="..." />
+                                    {/* <img src={bigBusiness} className="img-fluid rounded-start" alt="..." /> */}
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
@@ -77,24 +79,32 @@ const SportsHero = () => {
 
                     <Col lg={3} xs={12}>
                         <Link to='/' >
-                            <img src={latestImage3} alt="card Image" />
+                            <img src={Ertz} alt="card Image" />
                             <h3 className='fs-6 text-uppercase fst-normal py-2 fw-bold '>Why this photographer wants to see more women like her behind the lens</h3>
                         </Link>
-
-                        <Link to='/' >
-                            <img src={latestImage1} alt="card Image" />
-                            <h3 className='fs-6 text-uppercase fst-normal py-2 fw-bold '>Why this photographer wants to see more women like her behind the lens</h3>
-                        </Link>
-                        <Link to='/' >
-                            <img src={latestImage2} alt="card Image" />
-                            <h3 className='fs-6 text-uppercase fst-normal py-2 fw-bold '>Why this photographer wants to see more women like her behind the lens</h3>
-                        </Link>
+                        
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit</p>
+                        <hr className="border opacity-50" />
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit</p>
+                        <hr className="border opacity-50" />
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit</p>
+                        <hr className="border opacity-50" />
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit</p>
+                        <hr className="border opacity-50" />
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit</p>
+                        <hr className="border opacity-50" />
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit</p>
+                        <hr className="border opacity-50" />
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit</p>
+                        <hr className="border opacity-50" />
+                        
+                        
 
                     </Col>
 
                     <Col lg={3} xs={12}>
                         <Link to='/' >
-                            <img src={latestImage4} alt="card Image" />
+                            {/* <img src={latestImage4} alt="card Image" /> */}
                             <p>Why this photographer wants to see more women like her behind the lens</p>
                         </Link>
                     </Col>
