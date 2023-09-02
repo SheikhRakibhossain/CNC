@@ -18,7 +18,7 @@ const Profiles = () => {
         <h1>Women's World Cup in depth</h1>
         <hr className="border border-dark " />
         <CardGroup className='gap-3 py-4'>
-      <Card >
+      <Card className='border'>
         <Card.Img variant="top" src={profile1} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
@@ -31,7 +31,7 @@ const Profiles = () => {
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
-      <Card>
+      <Card className='border'>
         <Card.Img variant="top" src={profile2} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
@@ -44,7 +44,7 @@ const Profiles = () => {
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
-      <Card>
+      <Card className='border'>
         <Card.Img variant="top" src={profile3} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
@@ -58,7 +58,7 @@ const Profiles = () => {
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
-      <Card>
+      <Card className='border'>
         <Card.Img variant="top" src={profile4} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
