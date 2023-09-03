@@ -6,6 +6,7 @@ import Golf from './Golf';
 import Football from './Football';
 import Tennis from './Tennis';
 import USSports from './USSports';
+import Longform from './Longform';
 
 const Sports = () => {
     return (
@@ -17,6 +18,7 @@ const Sports = () => {
             <Football/>
             <Tennis/>
             <USSports/>
+            <Longform/>
         </>
     );
 };

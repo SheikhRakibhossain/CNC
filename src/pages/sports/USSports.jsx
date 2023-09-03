@@ -11,7 +11,7 @@ const USSports = () => {
     return (
         <>
             <Container>
-                <h1>World Golfs </h1>
+                <h1>US Sports </h1>
                 <hr className="border border-dark " />
                 <CardGroup className='gap-3 py-4'>
                     <Card className='border'>
