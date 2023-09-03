@@ -3,6 +3,7 @@ import SportsHero from './SportsHero';
 import WomensWorld from './WomensWorld';
 import Profiles from './Profiles';
 import Golf from './Golf';
+import Football from './Football';
 
 const Sports = () => {
     return (
@@ -11,6 +12,7 @@ const Sports = () => {
             <WomensWorld/>
             <Profiles/>
             <Golf/>
+            <Football/>
         </>
     );
 };
