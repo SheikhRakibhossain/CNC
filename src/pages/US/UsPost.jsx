@@ -4,7 +4,7 @@ import cardImage1 from '../../assets/girlscat/girl.jpg'
 
 const UsPost = () => {
     return (
-        <CardGroup>
+        <CardGroup className='pb-5'>
         <Card>
           <Card.Img variant="top" src={cardImage1} />
           <Card.Body>
