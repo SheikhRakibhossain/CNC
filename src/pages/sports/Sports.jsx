@@ -5,6 +5,7 @@ import Profiles from './Profiles';
 import Golf from './Golf';
 import Football from './Football';
 import Tennis from './Tennis';
+import USSports from './USSports';
 
 const Sports = () => {
     return (
@@ -15,6 +16,7 @@ const Sports = () => {
             <Golf/>
             <Football/>
             <Tennis/>
+            <USSports/>
         </>
     );
 };
