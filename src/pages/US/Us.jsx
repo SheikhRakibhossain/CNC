@@ -4,14 +4,25 @@ import UsPost from './UsPost';
 import UsHeroSEction from './UsHeroSEction';
 import OnlyUs from './OnlyUs';
 import USVideo from './USVideo';
+import UsPolitics from './usPolitics';
+import { Container } from 'react-bootstrap';
+import AroundUs from './AroundUs';
 
 const Us = () => {
     return (
         <>
-            <UsHeroSEction/>
-            <UsPost/>
-            <OnlyUs/>
-            <USVideo/>
+
+
+            <Container>
+                <UsHeroSEction />
+                <UsPost />
+                <OnlyUs />
+                <USVideo />
+                <UsPolitics />
+                <AroundUs/>
+            </Container>
+
+
 
         </>
     );
