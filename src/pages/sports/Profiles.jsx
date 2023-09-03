@@ -10,73 +10,71 @@ import profile4 from '../../assets/sports/profile4.jpg';
 // import womenCup5 from '../../assets/sports/womenCup-4.jpg';
 
 const Profiles = () => {
-    return (
-        <>
-            <h2>I am profile pages.</h2>
-            <Container>
-            
-        <h1>Women's World Cup in depth</h1>
+  return (
+    <>
+      <Container>
+        <h1>Profiles</h1>
         <hr className="border border-dark " />
         <CardGroup className='gap-3 py-4'>
-      <Card className='border'>
-        <Card.Img variant="top" src={profile1} />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card className='border'>
-        <Card.Img variant="top" src={profile2} />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This card has supporting text below as a natural lead-in to
-            additional content.{' '}
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card className='border'>
-        <Card.Img variant="top" src={profile3} />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-      <Card className='border'>
-        <Card.Img variant="top" src={profile4} />
-        <Card.Body>
-          <Card.Title>Card title</Card.Title>
-          <Card.Text>
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This card has even longer content than the
-            first to show that equal height action.
-          </Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
-        </Card.Footer>
-      </Card>
-    </CardGroup>
+          <Card className='border'>
+            <Card.Img variant="top" src={profile1} />
+            <Card.Body>
+              <Card.Title>Card title</Card.Title>
+              <Card.Text>
+                This is a wider card with supporting text below as a natural lead-in
+                to additional content. This content is a little bit longer.
+              </Card.Text>
+            </Card.Body>
+            <Card.Footer>
+              <small className="text-muted">Last updated 3 mins ago</small>
+            </Card.Footer>
+          </Card>
+          <Card className='border'>
+            <Card.Img variant="top" src={profile2} />
+            <Card.Body>
+              <Card.Title>Card title</Card.Title>
+              <Card.Text>
+                This card has supporting text below as a natural lead-in to
+                additional content.{' '}
+              </Card.Text>
+            </Card.Body>
+            <Card.Footer>
+              <small className="text-muted">Last updated 3 mins ago</small>
+            </Card.Footer>
+          </Card>
+          <Card className='border'>
+            <Card.Img variant="top" src={profile3} />
+            <Card.Body>
+              <Card.Title>Card title</Card.Title>
+              <Card.Text>
+                This is a wider card with supporting text below as a natural lead-in
+                to additional content. This card has even longer content than the
+                first to show that equal height action.
+              </Card.Text>
+            </Card.Body>
+            <Card.Footer>
+              <small className="text-muted">Last updated 3 mins ago</small>
+            </Card.Footer>
+          </Card>
+          <Card className='border'>
+            <Card.Img variant="top" src={profile4} />
+            <Card.Body>
+              <Card.Title>Card title</Card.Title>
+              <Card.Text>
+                This is a wider card with supporting text below as a natural lead-in
+                to additional content. This card has even longer content than the
+                first to show that equal height action.
+              </Card.Text>
+            </Card.Body>
+            <Card.Footer>
+              <small className="text-muted">Last updated 3 mins ago</small>
+            </Card.Footer>
+          </Card>
+        </CardGroup>
 
-        </Container>
-        </>
-    );
+      </Container>
+    </>
+  );
 };
 
 export default Profiles;
