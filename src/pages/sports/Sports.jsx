@@ -7,6 +7,8 @@ import Football from './Football';
 import Tennis from './Tennis';
 import USSports from './USSports';
 import Longform from './Longform';
+import PhotoGalleries from './PhotoGalleries';
+import Video from './Video';
 
 const Sports = () => {
     return (
@@ -14,8 +16,10 @@ const Sports = () => {
             <SportsHero />
             <WomensWorld/>
             <Profiles/>
+            <Video/>
             <Golf/>
             <Football/>
+            <PhotoGalleries/>
             <Tennis/>
             <USSports/>
             <Longform/>
