@@ -15,7 +15,19 @@ const Media = () => {
             <Row>
                 <Col lg={3}>
                 <img src={media1} alt="talking fight each with other" />
-                    <p className='fs-5 fw-bold pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt voluptatibus quod dignissimos enim iure obcaecati. Consequuntur dolores rerum consequatur.</p>
+                    <p className=' fw-bold pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt voluptatibus quod dignissimos enim iure obcaecati. Consequuntur dolores rerum consequatur.</p>
+                </Col>
+                <Col lg={3}>
+                <img src={media1} alt="talking fight each with other" />
+                    <p className=' fw-bold pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt voluptatibus quod dignissimos enim iure obcaecati. Consequuntur dolores rerum consequatur.</p>
+                </Col>
+                <Col lg={3}>
+                <img src={media1} alt="talking fight each with other" />
+                    <p className=' fw-bold pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt voluptatibus quod dignissimos enim iure obcaecati. Consequuntur dolores rerum consequatur.</p>
+                </Col>
+                <Col lg={3}>
+                <img src={media1} alt="talking fight each with other" />
+                    <p className=' fw-bold pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt voluptatibus quod dignissimos enim iure obcaecati. Consequuntur dolores rerum consequatur.</p>
                 </Col>
             </Row>
 
