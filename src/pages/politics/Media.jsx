@@ -9,7 +9,7 @@ const Media = () => {
     return (
         <>
 
-            <h1 className='pt-5'>CNN Analysis</h1>
+            <h1 className='pt-5'>CNN Media Analysis</h1>
             <hr className="border border-dark " />
 
             <Row>
@@ -18,15 +18,15 @@ const Media = () => {
                     <p className=' fw-bold pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt voluptatibus quod dignissimos enim iure obcaecati. Consequuntur dolores rerum consequatur.</p>
                 </Col>
                 <Col lg={3}>
-                <img src={media1} alt="talking fight each with other" />
+                <img src={media2} alt="talking fight each with other" />
                     <p className=' fw-bold pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt voluptatibus quod dignissimos enim iure obcaecati. Consequuntur dolores rerum consequatur.</p>
                 </Col>
                 <Col lg={3}>
-                <img src={media1} alt="talking fight each with other" />
+                <img src={media3} alt="talking fight each with other" />
                     <p className=' fw-bold pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt voluptatibus quod dignissimos enim iure obcaecati. Consequuntur dolores rerum consequatur.</p>
                 </Col>
                 <Col lg={3}>
-                <img src={media1} alt="talking fight each with other" />
+                <img src={media4} alt="talking fight each with other" />
                     <p className=' fw-bold pt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt voluptatibus quod dignissimos enim iure obcaecati. Consequuntur dolores rerum consequatur.</p>
                 </Col>
             </Row>
