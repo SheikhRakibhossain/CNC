@@ -18,6 +18,7 @@ import UserLayout from '../layouts/UserLayout';
 import NavPageLayout from '../layouts/NavPageLayout';
 import Style from '../pages/StylePage/Style';
 import World from '../pages/world/World';
+import Politics from '../pages/politics/Politics';
 
 const router = createBrowserRouter([
   {
@@ -76,7 +77,7 @@ const router = createBrowserRouter([
 
     ]
 
-
+ 
   },
   {
     path: '/',
@@ -111,6 +112,10 @@ const router = createBrowserRouter([
       {
         path: 'world',
         element: <World/>
+      },
+      {
+        path:'politics',
+        element:<Politics/>,
       }
     ]
   }
